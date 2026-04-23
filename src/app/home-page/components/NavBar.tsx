@@ -98,14 +98,9 @@ export default function NavBar({ t, lang, onLanguageChange }: NavBarProps) {
         <div className="max-w-7xl mx-auto px-5 md:px-10 flex items-center justify-between gap-4">
           {/* Logo */}
           <button onClick={() => scrollTo('hero')} className="flex items-center flex-shrink-0 transition-opacity hover:opacity-90">
-            <Image 
-              src="/assets/images/logo.png" 
-              alt="AGROMETALIS GROUPE Logo" 
-              width={320} 
-              height={80} 
-              className="h-20 w-auto object-contain"
-              priority
-            />
+            <span className="text-2xl font-black tracking-widest text-white font-display">
+              AGROMETALIS
+            </span>
           </button>
 
           {/* Desktop Nav */}

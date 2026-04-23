@@ -98,13 +98,9 @@ export default function Footer({ t, lang }: FooterProps) {
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <button onClick={() => scrollTo('hero')} className="flex items-center mb-4 transition-opacity hover:opacity-80">
-              <Image 
-                src="/assets/images/logo.png" 
-                alt="AGROMETALIS GROUPE Logo" 
-                width={240} 
-                height={60} 
-                className="h-16 w-auto object-contain"
-              />
+              <span className="text-xl font-black tracking-widest text-white font-display">
+                AGROMETALIS
+              </span>
             </button>
             <p className="text-white/40 text-xs leading-relaxed mb-5" style={{ fontFamily: lang === 'ar' ? 'Cairo, sans-serif' : undefined }}>
               {t.footer.tagline}
@@ -159,7 +155,7 @@ export default function Footer({ t, lang }: FooterProps) {
               <span
                 key={cert}
                 className="text-[10px] font-bold px-3 py-1.5 rounded-full"
-                style={{ background: 'rgba(249,168,37,0.12)', color: '#F9A825', border: '1px solid rgba(249,168,37,0.25)' }}
+                style={{ background: 'rgba(27,94,32,0.12)', color: '#81C784', border: '1px solid rgba(129,199,132,0.25)' }}
               >
                 {cert}
               </span>
